@@ -5,21 +5,21 @@
 class Neo4jCli < Formula
   desc "Command-line interface for Neo4j"
   homepage "https://github.com/neo4j/cli"
-  version "1.13.0"
+  version "1.14.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/neo4j-labs/neo4j-cli/releases/download/v1.13.0/neo4j-cli_1.13.0_Darwin_x86_64.tar.gz"
-      sha256 "2b4c902d0e6990704c4cae1debcdeb27e61f75d9972ad261ae362d528c457190"
+      url "https://github.com/neo4j-labs/neo4j-cli/releases/download/v1.14.0/neo4j-cli_1.14.0_Darwin_x86_64.tar.gz"
+      sha256 "336996e63079d9032630b44e99e40f7bed3ff43483d00cfa1732d85a3837665d"
 
       define_method(:install) do
         bin.install "neo4j-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/neo4j-labs/neo4j-cli/releases/download/v1.13.0/neo4j-cli_1.13.0_Darwin_arm64.tar.gz"
-      sha256 "00f0985176e1d3ae4a19c3e459dd1efc446f2c33f7c095ef6f1c969c4678cd2a"
+      url "https://github.com/neo4j-labs/neo4j-cli/releases/download/v1.14.0/neo4j-cli_1.14.0_Darwin_arm64.tar.gz"
+      sha256 "cd90346c8302d5e906ac8212c366c90da69549c1c752783b6a64bfca9a64d528"
 
       define_method(:install) do
         bin.install "neo4j-cli"
@@ -29,15 +29,15 @@ class Neo4jCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/neo4j-labs/neo4j-cli/releases/download/v1.13.0/neo4j-cli_1.13.0_Linux_x86_64.tar.gz"
-      sha256 "0acaa856a093607d8377de92f073d8a320a92a307498a9a895d0a641d3d84b7e"
+      url "https://github.com/neo4j-labs/neo4j-cli/releases/download/v1.14.0/neo4j-cli_1.14.0_Linux_x86_64.tar.gz"
+      sha256 "6df4e50ee0650c70116dcede1ccd19b613899c658461abd96e4328791dfd01b6"
       define_method(:install) do
         bin.install "neo4j-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/neo4j-labs/neo4j-cli/releases/download/v1.13.0/neo4j-cli_1.13.0_Linux_arm64.tar.gz"
-      sha256 "1851efaae22172bfaaffb575caff281ce734bee1683b580e0777e2b53c5a4014"
+      url "https://github.com/neo4j-labs/neo4j-cli/releases/download/v1.14.0/neo4j-cli_1.14.0_Linux_arm64.tar.gz"
+      sha256 "9620e2da2f48fdc1ba22a3db3fe07eaf621b3dfa5e61506584cd5ac700dce2d0"
       define_method(:install) do
         bin.install "neo4j-cli"
       end
